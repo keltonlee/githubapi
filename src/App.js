@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CounterButton from './cgu_CounterButton'
+import HelloCGU from './cgu_hello'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="App">
+  <div>
+  { HelloCGU() }
+  </div>
+  <div>
+  {<CounterButton i='1' />}
+  {<CounterButton i='2' />}
+  {<CounterButton i='3' />}
+  {<CounterButton i='4' />}
+  {<CounterButton i='5' />}
+  {<CounterButton i='6' />}
+  {<CounterButton i='7' />}
+  {<CounterButton i='8' />}
+  {<CounterButton i='9' />}
+  {<CounterButton i='10' />}
+  </div>
+  </div>
   );
-}
+ }
 
 export default App;
